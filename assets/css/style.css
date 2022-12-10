@@ -13537,7 +13537,7 @@ div.tagsinput span.tag a {
 }
 .profile-name{
   font-size: 28px;
-  font-family: 'Raleway', Bold;
+  font-family: 'Raleway', sans-serif;
   text-align: left;
   color: #11141A;
   font-weight: 900;
@@ -13558,6 +13558,7 @@ div.tagsinput span.tag a {
 .upgrade{
   background-color: #322A7D;
   border-radius: 20px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .overlay{
@@ -13574,6 +13575,24 @@ div.tagsinput span.tag a {
   font-size: 10px;
   color: #FFFFFF;
 }
+
+.envelop{
+  color: #FFA101;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Tab menu */
 .booking-tab {
   text-decoration: none;
