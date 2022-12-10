@@ -13512,8 +13512,68 @@ div.tagsinput span.tag a {
   font-size: 14px;
 }
 
+.top-card{
+  border-radius: 10px;
+}
+.second-card{
+  border-radius: 12px;
+}
+.edit-button{
+  color: #322A7D;
+  background-color: #ECEEF2;
+  border-radius: 20px;
+}
 
+.edit-button:hover {
+  background-color: #322A7D;
+  color: #FFFFFF;
+}
+.hello{
+  font-size: 24px;
+  font-family: 'Raleway', sans-serif;
+  text-align: left;
+  color: #11141A;
 
+}
+.profile-name{
+  font-size: 28px;
+  font-family: 'Raleway', Bold;
+  text-align: left;
+  color: #11141A;
+  font-weight: 900;
+}
+.bio{
+  font-size: 12px;
+  color: #7F8FA4;
+
+}
+.customise-blocks{
+  border-radius: 6px !important;
+  background-color: #322A7D !important;
+  color: #FFFFFF;
+}
+.customise-blocks:hover{
+  background-color: #69519e !important;
+}
+.upgrade{
+  background-color: #322A7D;
+  border-radius: 20px;
+}
+
+.overlay{
+  position: absolute;
+  top: 322px;
+}
+
+.upgrade-text{
+  font-size: 20px;
+  color: #FFFFFF;
+  font-weight: 900;
+}
+.for-more-profile{
+  font-size: 10px;
+  color: #FFFFFF;
+}
 /* Tab menu */
 .booking-tab {
   text-decoration: none;
