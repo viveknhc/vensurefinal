@@ -13578,6 +13578,30 @@ div.tagsinput span.tag a {
 
 .envelop{
   color: #FFA101;
+  background-color: #ffd388;
+  border-radius: 15px;
+}
+
+.reminder-head{
+  color: #354052 !important;
+  font-size: 14px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+}
+
+.reminder-desc{
+  color: #7F8FA4;
+  font-size: 12px;
+}
+.reminder{
+  color: #11141A;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 900;
+}
+
+.viewall{
+  color: #FFA101;
 }
 
 
