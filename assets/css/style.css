@@ -13691,3 +13691,8 @@ div.tagsinput span.tag a {
 .portlet .tabbable-line>.tab-content {
   padding-bottom: 0;
 }
+
+.nav-link:hover{
+  background-color: #ffffff !important;
+  border-right: 5px solid #ffa101;
+}
