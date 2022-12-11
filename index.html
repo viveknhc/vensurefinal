@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
     integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-hhh
+
   <link rel="stylesheet" href="assets/css/icons.css">
   <link rel="stylesheet" href="assets/css/bootstrap.css">
   <link rel="stylesheet" href="assets/css/style.css">
@@ -36,7 +36,7 @@ hhh
       <div class="navbar-menu-wrapper d-lg-none d-flex align-items-center justify-content-end">
 
         <button class="navbar-toggler navbar-toggler align-self-center text-start" type="button" data-toggle="minimize">
-         
+
         </button>
 
         <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
@@ -54,20 +54,20 @@ hhh
 
         </div>
         <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">
+          <li class="nav-item active-name">
+            <a class="nav-link" href="#">
               <img src="assets/images/sidebar icons/dashboard-active.svg" alt="">
               <span class="menu-title px-3">demo</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pages/widgets/widgets.html">
+            <a class="nav-link" href="#">
               <img src="assets/images/sidebar icons/graph.svg" alt="">
               <span class="menu-title px-3">demo</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="pages/ui-features/popups.html">
+            <a class="nav-link" href="#">
               <img src="assets/images/sidebar icons/appointments.svg" alt="">
               <span class="menu-title px-3">demo</span>
             </a>
@@ -75,7 +75,7 @@ hhh
 
 
           <li class="nav-item">
-            <a class="nav-link" href="pages/ui-features/popups.html">
+            <a class="nav-link" href="#">
               <img src="assets/images/sidebar icons/enquiries.svg" alt="">
               <span class="menu-title px-3">demo</span>
             </a>
@@ -83,36 +83,25 @@ hhh
 
 
           <li class="nav-item">
-            <a class="nav-link" href="pages/ui-features/notifications.html">
+            <a class="nav-link" href="#">
               <img src="assets/images/sidebar icons/messages.svg" alt="">
               <span class="menu-title px-3">demo</span>
             </a>
           </li>
-       
+
           <li class="nav-item">
-            <a class="nav-link" href="pages/ui-features/notifications.html">
+            <a class="nav-link" href="#">
               <img src="assets/images/sidebar icons/users.svg" alt="">
               <span class="menu-title px-3">demo</span>
             </a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="pages/ui-features/notifications.html">
+            <a class="nav-link" href="#">
               <img src="assets/images/sidebar icons/settings.svg" alt="">
               <span class="menu-title px-3">demo</span>
             </a>
           </li>
-
-
-
-          <li class="nav-item">
-            <a class="nav-link" href="pages/ui-features/notifications.html">
-              <i class="fa fa-user"></i>
-              <span class="menu-title px-3">demo</span>
-            </a>
-          </li>
-
-
         </ul>
       </nav>
 
@@ -353,7 +342,7 @@ hhh
                                 <div class="card second-card">
                                   <div class="card-body">
                                     <div class="booking-name pb-3 fw-bolder">
-                                     Jasmine Palmer
+                                      Jasmine Palmer
                                     </div>
                                     <span class="card-service">service</span>
                                     <div class="service-name fw-bold  pb-3">
@@ -430,7 +419,7 @@ hhh
                                 <div class="card second-card">
                                   <div class="card-body">
                                     <div class="booking-name pb-3 fw-bolder">
-                                     Christine powell
+                                      Christine powell
                                     </div>
                                     <span class="card-service">service</span>
                                     <div class="service-name fw-bold  pb-3">
@@ -491,28 +480,40 @@ hhh
             <div class="profile col-lg-3 p-4">
 
               <div class="row">
-                <div class="col-9">
-                  
-                  <form class="search-form">
-                    
+
+
+                <!-- <form class="search-form">
+
                     <input type="search" value="" placeholder="Search keyword" class="search-input">
                     <button type="submit" class="search-button">
                       <img src="assets/images/search/Search.svg" alt="">
                     </button>
-                 
-                  </form>
-                
-                </div>
-                <div class="col-3">
 
-                  <div>
-                    <img src="assets/images/icon/Notifications.svg" alt="" class="p-3 notyfy">
-                  </div>
+                  </form> -->
+
+
+                <div class="col-lg-9 col-9 d-flex bfm-color position-relative">
+                  <button class="btn btn-copy" data-feedback=" Copied"> <span class="vertical-line2"></span> <img
+                    src="assets/images/search/Search.svg" alt=""></button>
+                  <input type="text" class="form-control copy-input" value="search keyword">
+              
+                </div>
+
+
+
+                <div class="col-3 text-end">
+
+                 
+                    <div class="position-relative">
+                      <img src="assets/images/icon/Notifications.svg" alt="" class="p-3 notyfy">
+                      <span class="dots"></span>
+                    </div>
+               
 
                 </div>
               </div>
 
-              <div class="row pt-3 mt-lg-5">
+              <div class="row pt-3 mt-lg-5 mb-3">
                 <div class="col-lg-8">
                   <div class="hello">Hello,</div>
                   <div class="profile-name">Jonathan!</div>
@@ -524,82 +525,92 @@ hhh
               </div>
 
 
+
+
               <div class="row mb-5">
-                <div class="col-7">
-                  <div id="inviteCode" class="invite-page">
-                    <input id="link"
-                      value="https://staging.revolutioncredit.com/signupc/VprfEgvNdGuDLdAWBqi7iWAFoxKKpg_yg0hqNGBd2PU?eTypeId=44"
-                      readonly>
-                    <div id="copy">
-                      <img src="assets/images/copy/copy.png" alt="">
-                    </div>
-                  </div>
+                <div class="col-lg-7 col-7 d-flex bfm-color position-relative">
+                  <input type="text" class="form-control copy-input" value="scheddo.com/jonathan">
+                  <button class="btn btn-copy" data-feedback=" Copied"> <span class="vertical-line"></span> <img
+                    src="assets/images/copy/copy.png" alt=""></button>
                 </div>
-                <div class="col-5">
+
+
+                <div class="col-5 text-end">
                   <div class="btn p-3 fw-bolder edit-button">Edit Link</div>
                 </div>
               </div>
 
 
-              <div class="pb-4">
-                <div>
-                  <img class="upgrade" src="assets/images/Pattern/Pattern.png" alt="">
 
-                  <div class="overlay row p-5">
-                    <div class="col-lg-8">
-                      <div class="upgrade-text">Upgrade to Pro</div>
-                      <p class="for-more-profile">for more profile controll</p>
-                    </div>
-                    <div class="col-lg-4">
-                      <div class="text-end">
-                        <i class="fa fa-user"></i>
-                        <i class="fa-thin fa-crown"></i>
+              <div class="row position-relative bg-blue mb-5">
+                <div class="col-12 col-md-12 col-12 p-0">
+                  <div class="premium-box">
+                    <img class="bg-img" src="assets/images/Pattern/Pattern.png" alt="">
+
+                    <div class="row premium-card">
+                      <div class="col-lg-8 col-8">
+                        <div class="d-flex align-items-center fl-cl">
+                          <div class="content-box">
+                            <h5 class="premium-title text-white">Upgrade <br> to PRO</h5>
+                            <p class="premium-desc">for more profile controll</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-4 d-flex align-items-center justify-content-center">
+                        <div class="premicon-box">
+
+                          <i class='fas fa-crown crown'></i>
+                        </div>
                       </div>
                     </div>
+
                   </div>
+
                 </div>
               </div>
-<div class="row">
-  <div class="col-8 reminder">Reminders</div>
-  <div class="col-4 viewall">view all <i class="fa-solid fa-angle-right"></i></div>
-</div>
 
 
-<div class="row py-3">
-  <div class="col-2">
-    <div>
-      <img src="assets/images/icon/exclamation.svg" alt="">
-    </div>
-  </div>
-  <div class="col-10 px-3">
-    <div class="reminder-head">Booking Reminder</div>
-    <span class="reminder-desc">Lorem ipsum dolor sit amet consectetur adipisici</span> 
-  </div>
-</div>
+              <div class="row">
+                <div class="col-8 reminder">Reminders</div>
+                <div class="col-4 viewall">view all <i class="fa-solid fa-angle-right"></i></div>
+              </div>
 
-<div class="row py-3">
-  <div class="col-2">
-    <div class="">
-      <i class="fa-solid fa-envelope envelop p-3"></i>
-    </div>
-  </div>
-  <div class="col-10 px-3">
-    <div class="reminder-head">New Message</div>
-    <span class="reminder-desc">Lorem ipsum dolor sit amet consectetur adipisici</span> 
-  </div>
-</div>
 
-<div class="row py-3">
-  <div class="col-2">
-    <div>
-      <img src="assets/images/icon/exclamation.svg" alt="">
-    </div>
-  </div>
-  <div class="col-10 px-3">
-    <div class="reminder-head">New Booking</div>
-    <span class="reminder-desc">Lorem ipsum dolor sit amet consectetur adipisici</span> 
-  </div>
-</div>
+              <div class="row py-3">
+                <div class="col-2">
+                  <div>
+                    <img src="assets/images/icon/exclamation.svg" alt="">
+                  </div>
+                </div>
+                <div class="col-10 px-3">
+                  <div class="reminder-head">Booking Reminder</div>
+                  <span class="reminder-desc">Lorem ipsum dolor sit amet consectetur adipisici</span>
+                </div>
+              </div>
+
+              <div class="row py-3">
+                <div class="col-2">
+                  <div class="">
+                    <i class="fa-solid fa-envelope envelop p-3"></i>
+                  </div>
+                </div>
+                <div class="col-10 px-3">
+                  <div class="reminder-head">New Message</div>
+                  <span class="reminder-desc">Lorem ipsum dolor sit amet consectetur adipisici</span>
+                </div>
+              </div>
+
+              <div class="row py-3">
+                <div class="col-2">
+                  <div>
+                    <img src="assets/images/icon/exclamation.svg" alt="">
+                  </div>
+                </div>
+                <div class="col-10 px-3">
+                  <div class="reminder-head">New Booking</div>
+                  <span class="reminder-desc">Lorem ipsum dolor sit amet consectetur adipisici</span>
+                </div>
+              </div>
 
               <div>
 

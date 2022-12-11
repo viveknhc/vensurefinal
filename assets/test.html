@@ -1,183 +1,136 @@
 <style>
+	html,
+	body {
+		height: 100%;
+	}
 
-/*-------------------- App --------------------*/
- .search-form {
-	 position: relative;
-	 top: 50%;
-	 left: 50%;
-	 width: 350px;
-	 height: 40px;
-	 border-radius: 40px;
-	 box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-	 transform: translate(-50%, -50%);
-	 background: #fff;
-	 transition: all 0.3s ease;
-}
- .search-form.focus {
-	 box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15);
-}
- .search-input {
-	 position: absolute;
-	 top: 10px;
-	 left: 38px;
-	 font-size: 14px;
-	 background: none;
-	 color: #5a6674;
-	 width: 195px;
-	 height: 20px;
-	 border: none;
-	 appearance: none;
-	 outline: none;
-}
- .search-input::-webkit-search-cancel-button {
-	 appearance: none;
-}
- .search-button {
-	 position: absolute;
-	 top: 10px;
-	 left: 15px;
-	 height: 20px;
-	 width: 20px;
-	 padding: 0;
-	 margin: 0;
-	 border: none;
-	 background: none;
-	 outline: none !important;
-	 cursor: pointer;
-}
- .search-button svg {
-	 width: 20px;
-	 height: 20px;
-	 fill: #5a6674;
-}
- .search-option {
-	 position: absolute;
-	 text-align: right;
-	 top: 10px;
-	 right: 15px;
-}
- .search-option div {
-	 position: relative;
-	 display: inline-block;
-	 margin: 0 1px;
-	 cursor: pointer;
-}
- .search-option div input {
-	 position: absolute;
-	 top: 0;
-	 left: 0;
-	 opacity: 0.01;
-	 cursor: pointer;
-}
- .search-option div span {
-	 position: absolute;
-	 display: block;
-	 text-align: center;
-	 left: 50%;
-	 transform: translateX(-50%);
-	 opacity: 0;
-	 background: #929aa3;
-	 color: #fff;
-	 font-size: 9px;
-	 letter-spacing: 1px;
-	 line-height: 1;
-	 text-transform: uppercase;
-	 padding: 4px 7px;
-	 border-radius: 12px;
-	 top: -18px;
-	 transition: all 0.2s ease-in-out;
-}
- .search-option div span::after {
-	 content: '';
-	 position: absolute;
-	 bottom: -3px;
-	 left: 50%;
-	 transform: translateX(-50%);
-	 border-top: 4px solid #929aa3;
-	 border-left: 4px solid transparent;
-	 border-right: 4px solid transparent;
-	 transition: all 0.2s ease-in-out;
-}
- .search-option div:hover span {
-	 opacity: 1;
-	 top: -21px;
-}
- .search-option div label {
-	 display: block;
-	 cursor: pointer;
-}
- .search-option div svg {
-	 height: 20px;
-	 width: 20px;
-	 fill: #5a6674;
-	 opacity: 0.6;
-	 transition: all 0.2s ease-in-out;
-	 pointer-events: none;
-}
- .search-option div:hover svg {
-	 opacity: 1;
-}
- .search-option div input:checked + label svg {
-	 fill: #e24040;
-	 opacity: 0.9;
-}
- .search-option div input:checked + label span {
-	 background: #e24040;
-}
- .search-option div input:checked + label span::after {
-	 border-top-color: #e24040;
-}
- 
+	body {
+		font-size: 16px;
+		background: #ffd1dd;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+
+	.wrapper {
+		padding: 0 5px;
+	}
+
+	h1 {
+		text-align: center;
+		font-size: 40px;
+		margin-bottom: 1.2em;
+		text-decoration: underline;
+		text-transform: uppercase;
+	}
+
+	p {
+		font-family: 'VT323', monospace;
+		font-size: 20px;
+	}
+
+	.container {
+		display: flex;
+		background: #ffa3bb;
+		border-radius: 7px;
+		padding: 10px;
+		margin: 0 auto;
+	}
+
+	h3 {
+		font-size: 28px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+
+	h3 span {
+		display: inline-block;
+		position: relative;
+	}
+
+	.copy,
+	.paste {
+		flex-grow: 1;
+		width: 50%;
+	}
+
+	.copy {
+		border-right: 2px solid;
+		padding-right: 10px;
+	}
+
+	.copy h3 span {
+		background: #76ecff;
+	}
+
+	.copy input {
+		padding-right: 90px;
+	}
+
+	.paste {
+		padding-left: 10px;
+	}
+
+	.paste h3 span {
+		background: #fae916;
+	}
+
+	form {
+		position: relative;
+		width: 100%;
+	}
+
+	form input {
+		display: block;
+		width: 100%;
+		border: 3px solid;
+		outline: 0;
+		background: #fff;
+		font-size: 25px;
+		padding: 5px 4px;
+		margin-bottom: 20px;
+	}
+
+	form button {
+		display: block;
+		position: absolute;
+		top: 50%;
+		right: 10px;
+		transform: translateY(-50%);
+		border: 0;
+		outline: 0;
+		color: #fff;
+		background: #000;
+		font-family: 'VT323', monospace;
+		font-size: 25px;
+		text-transform: uppercase;
+		padding: 0.08em 0.8em;
+		cursor: pointer;
+	}
 </style>
 
+<form>
+	<input type="text" value="https://codepen.io/she_codes/pen/OgrJJe/">
+	<button type="button">Copy</button>
+</form>
 
 
-<form class="search-form">
-    <input type="search" value="" placeholder="Search" class="search-input">
-    <button type="submit" class="search-button">
-      <svg class="submit-button">
-        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#search"></use>
-      </svg>
-    </button>
-    <div class="search-option">
-      <div>
-        <input name="type" type="radio" value="type-users" id="type-users">
-        <label for="type-users">
-          <svg class="edit-pen-title">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#user"></use>
-          </svg>
-          <span>Users</span>
-        </label>
-      </div>
-      
-      <div>
-        <input name="type" type="radio" value="type-posts" id="type-posts">
-        <label for="type-posts">
-          <svg class="edit-pen-title">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#post"></use>
-          </svg>
-          <span>Posts</span>
-        </label>
-      </div>
-      <div>
-        <input name="type" type="radio" value="type-images" id="type-images">
-        <label for="type-images">
-          <svg class="edit-pen-title">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#images"></use>
-          </svg>
-          <span>Images</span>
-        </label>
-      </div>
-      <div>
-        <input name="type" type="radio" value="type-special" id="type-special" checked="">
-        <label for="type-special">
-          <svg class="edit-pen-title">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#special"></use>
-          </svg>
-          <span>Special</span>
-        </label>
-      </div>
-    </div>
-  </form>
+<script>
+	(function () {
+		var copyButton = document.querySelector('.copy button');
+		var copyInput = document.querySelector('.copy input');
+		copyButton.addEventListener('click', function (e) {
+			e.preventDefault();
+			var text = copyInput.select();
+			document.execCommand('copy');
+		});
 
-
+		copyInput.addEventListener('click', function () {
+			this.select();
+		});
+	})();
+</script>
