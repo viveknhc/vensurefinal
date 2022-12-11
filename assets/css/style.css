@@ -13829,3 +13829,9 @@ div.tagsinput span.tag a {
 .search-option div input:checked + label span::after {
   border-top-color: #e24040;
 }
+
+
+.notyfy{
+  background-color: #f7f8fa;
+  border-radius: 55px;
+}
