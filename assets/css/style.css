@@ -13451,6 +13451,7 @@ div.tagsinput span.tag a {
   background: #322A7D 0% 0% no-repeat padding-box;
   border-radius: 6px;
   opacity: 1;
+  
 }
 
 .profile {
@@ -13551,6 +13552,7 @@ div.tagsinput span.tag a {
   border-radius: 6px !important;
   background-color: #322A7D !important;
   color: #FFFFFF;
+  font-size: 12px;
 }
 .customise-blocks:hover{
   background-color: #69519e !important;
@@ -13706,7 +13708,7 @@ div.tagsinput span.tag a {
   position: relative;
   top: 50%;
   left: 50%;
-  width: 250px;
+  width: 222px;
   height: 44px;
   border-radius: 40px;
   /* box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); */
